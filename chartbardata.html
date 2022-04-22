@@ -1,0 +1,14 @@
+<template>
+  <lightning-card title='Sample Chart'>
+    <div class="demo-only demo-only--sizing slds-grid slds-wrap all_main_contents" >
+      <select class="slds-select" id="chartType" name = "optionSelect" onchange={changeHandler} >
+           <option value="bar">bar</option>
+          <option value="doughnut">doughnut</option>
+          <option value="line">line</option>
+      </select>
+  </div>
+    <div>
+      <canvas class="donut" lwc:dom="manual"></canvas>
+    </div>
+  </lightning-card>
+</template>
